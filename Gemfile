@@ -5,8 +5,14 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.2'
 gem 'bcrypt',  '3.1.7'
 gem 'faker',                '1.4.2'
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.26.0'
 gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
+
+gem 'net-ssh'
+
 # Use sqlite3 as the database for Active Record
 gem 'bootstrap-sass',	'3.2.0.0'
 
@@ -40,7 +46,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-gem 'sqlite3'
+  gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
